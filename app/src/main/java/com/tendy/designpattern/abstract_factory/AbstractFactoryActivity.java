@@ -1,6 +1,7 @@
-package com.tendy.designpattern.simple_factory;
+package com.tendy.designpattern.abstract_factory;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,17 +13,20 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class SimpleFactoryActivty extends BaseActivity {
+/**
+ * Created by Administrator on 2017/2/7 0007.
+ */
 
+public class AbstractFactoryActivity extends BaseActivity {
     @BindView(R.id.tv_title)
     TextView tvTitle;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple_factory);
+        setContentView(R.layout.activity_abstract_factory);
         ButterKnife.bind(this);
-        tvTitle.setText("Simple factory");
+        tvTitle.setText("Abstract factory");
     }
 
     @OnClick({R.id.iv_back, R.id.bt_demo})
@@ -32,7 +36,7 @@ public class SimpleFactoryActivty extends BaseActivity {
                 finish();
                 break;
             case R.id.bt_demo:
-                SkipUtil.startActivity(this, SMCustomerActivity.class);
+                SkipUtil.startActivity(this, ABSFacCustomerActivity.class);
                 break;
         }
     }

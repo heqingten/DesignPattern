@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.tendy.designpattern.simple_factory.SimpleFactoryActivty">
+    tools:context="com.tendy.designpattern.factory_method.FactoryMethodActivity">
 
     <include layout="@layout/common_title_layout" />
 
@@ -24,7 +24,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
-                android:text="简单工厂就是在一个工厂里面区分建造不同的产品。"
+                android:text="工厂方法就是单独分出来多个具体的工厂建造不同的产品。"
                 android:textColor="@android:color/holo_purple"
                 android:textSize="16sp" />
 
@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/activity_vertical_margin"
-                android:text="@string/jdgc_intr" />
+                android:text="@string/gcff_intr" />
 
             <Button
                 android:id="@+id/bt_demo"
@@ -41,6 +41,4 @@
                 android:text="示例" />
         </LinearLayout>
     </ScrollView>
-
-
 </LinearLayout>

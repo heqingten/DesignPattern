@@ -5,11 +5,11 @@ package com.tendy.designpattern.simple_factory.code;
  */
 
 public class BMWFactory {
-    public BMW product(String code) {
+    public BMW product(int code) {
         switch (code) {
-            case "530":
+            case 530:
                 return new BMW530();
-            case "750":
+            case 750:
                 return new BMW750();
             default:
                 return null;

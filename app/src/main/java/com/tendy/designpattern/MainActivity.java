@@ -5,6 +5,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.tendy.designpattern.abstract_factory.AbstractFactoryActivity;
+import com.tendy.designpattern.abstract_factory.AbstractFactoryActivity_ViewBinding;
+import com.tendy.designpattern.factory_method.FactoryMethodActivity;
 import com.tendy.designpattern.framwork.BaseActivity;
 import com.tendy.designpattern.simple_factory.SimpleFactoryActivty;
 import com.tendy.designpattern.util.SkipUtil;
@@ -37,8 +40,10 @@ public class MainActivity extends BaseActivity {
                 SkipUtil.startActivity(this, SimpleFactoryActivty.class);
                 break;
             case R.id.tv_gcff:
+                SkipUtil.startActivity(this, FactoryMethodActivity.class);
                 break;
             case R.id.tv_cxgc:
+                SkipUtil.startActivity(this, AbstractFactoryActivity.class);
                 break;
         }
     }

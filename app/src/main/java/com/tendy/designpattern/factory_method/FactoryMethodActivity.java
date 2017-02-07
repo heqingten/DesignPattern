@@ -1,4 +1,4 @@
-package com.tendy.designpattern.simple_factory;
+package com.tendy.designpattern.factory_method;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +12,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class SimpleFactoryActivty extends BaseActivity {
+public class FactoryMethodActivity extends BaseActivity {
 
     @BindView(R.id.tv_title)
     TextView tvTitle;
@@ -20,9 +20,9 @@ public class SimpleFactoryActivty extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple_factory);
+        setContentView(R.layout.activity_factory_method);
         ButterKnife.bind(this);
-        tvTitle.setText("Simple factory");
+        tvTitle.setText("Factory method");
     }
 
     @OnClick({R.id.iv_back, R.id.bt_demo})
@@ -32,7 +32,7 @@ public class SimpleFactoryActivty extends BaseActivity {
                 finish();
                 break;
             case R.id.bt_demo:
-                SkipUtil.startActivity(this, SMCustomerActivity.class);
+                SkipUtil.startActivity(this, FMCustomerActivity.class);
                 break;
         }
     }

@@ -9,24 +9,44 @@
 
     <include layout="@layout/common_title_layout" />
 
-    <TextView
-        android:id="@+id/tv_jdgc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/activity_vertical_margin"
-        android:text="简单工厂模式（Simple Factory）" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/tv_gcff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/activity_vertical_margin"
-        android:text="工厂方法模式（Factory Method） " />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_cxgc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/activity_vertical_margin"
-        android:text="抽象工厂模式（Abstract Factory）" />
+            <TextView
+                android:id="@+id/tv_dl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="单例设计模式（Singleton）" />
+
+            <TextView
+                android:id="@+id/tv_jdgc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="简单工厂模式（Simple Factory）" />
+
+            <TextView
+                android:id="@+id/tv_gcff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="工厂方法模式（Factory Method） " />
+
+            <TextView
+                android:id="@+id/tv_cxgc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="抽象工厂模式（Abstract Factory）" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

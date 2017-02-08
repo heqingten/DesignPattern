@@ -21,6 +21,13 @@
         <activity android:name=".factory_method.FactoryMethodActivity" />
         <activity android:name=".abstract_factory.ABSFacCustomerActivity" />
         <activity android:name=".abstract_factory.AbstractFactoryActivity" />
+        <activity android:name=".singleton.SingletonIntroActivity" />
+        <activity android:name=".singleton.SingletonAActivity" />
+        <activity android:name=".singleton.SingletonBActivity" />
+        <activity android:name=".singleton.SingletonCActivity" />
+        <activity android:name=".singleton.SingletonDActivity" />
+        <activity android:name=".singleton.SingletonEActivity" />
+        <activity android:name=".PrincipleActivity"></activity>
     </application>
 
 </manifest>
